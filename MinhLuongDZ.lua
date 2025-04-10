@@ -2689,7 +2689,6 @@ v16.Home:AddButton({
     Callback = function()
         setclipboard("https://www.youtube.com/channel/UCfNq01799-2-_zA8gnrgLPw");
 end
-});
 v16.Home:AddButton({
     Title = "Facebook",
     Description = "Nhắn tin"

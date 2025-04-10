@@ -2683,6 +2683,20 @@ v16.Home:AddButton({
         setclipboard("https://discord.gg/CXvPS3vy");
 end
 });
+v16.Home:AddButton({
+    Title = "Youtube",
+    Description = "Đăng Kí",
+    Callback = function()
+        setclipboard("https://www.youtube.com/channel/UCfNq01799-2-_zA8gnrgLPw");
+end
+});
+v16.Home:AddButton({
+    Title = "Facebook",
+    Description = "Nhắn Tin",
+    Callback = function()
+        setclipboard("https://facebook.com/profile.php?id=61557777020843");
+end
+});
 _G.FastAttackStrix_Mode = "Super Fast Attack";
 spawn(function()
     while wait() do

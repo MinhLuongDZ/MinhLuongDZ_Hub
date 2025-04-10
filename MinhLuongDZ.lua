@@ -4637,12 +4637,6 @@ if Sea3 then
             end
         end
     end);
-    local v528 = v16.Main:Addsection("Boost Fps");
-                    end
-                end);
-            end
-        end
-    end);
 end
 if Sea3 then
     local v531 = v16.Sea:AddSection("Đảo Bí Ẩn");

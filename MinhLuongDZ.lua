@@ -2690,6 +2690,13 @@ v16.Home:AddButton({
         setclipboard("https://www.youtube.com/channel/UCfNq01799-2-_zA8gnrgLPw");
 end
 });
+v16.Home:AddButton({
+    Title = "Facebook",
+    Description = "Nhắn tin"
+    Callback = function()
+        setclipboard("https://facebook.com/profile.php?id=61557777020843");
+end
+});
 _G.FastAttackStrix_Mode = "Super Fast Attack";
 spawn(function()
     while wait() do

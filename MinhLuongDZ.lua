@@ -2682,6 +2682,8 @@ v16.Home:AddButton({
     Callback = function()
         setclipboard("https://discord.gg/CXvPS3vy");
 end
+});
+v16.Home:AddButton({
     Title = "Youtube",
     Description = "Đăng Kí" ,
     Callback = function()

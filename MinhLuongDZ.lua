@@ -6805,6 +6805,13 @@ end
 end)
     end
 });
+v16.Player:AddButton({
+    Title = "Discord",
+    Description = "Giao Lưu",
+    Callback = function()
+        setclipboard("https://discord.gg/CXvPS3vy");
+end
+});
 local v56 = v16.Player:AddSection("Khác");
 local v115 = v16.Player:AddToggle("ToggleNoClip", {
     Title = "Đi Xuyên Tường",

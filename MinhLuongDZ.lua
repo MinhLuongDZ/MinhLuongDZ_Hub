@@ -6785,7 +6785,7 @@ v16.Player:AddButton({
       -- leave a like pls
 
 
-_G.HeadSize = 20
+_G.HeadSize = 30
 _G.Disabled = true
  
 game:GetService('RunService').RenderStepped:connect(function()

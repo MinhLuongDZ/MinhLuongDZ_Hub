@@ -6807,9 +6807,8 @@ end)
 });
 v16.Player:AddButton({
     Title = "Discord",
-    Description = "Giao Lưu",
     Callback = function()
-        setclipboard("https://discord.gg/CXvPS3vy");
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/refs/heads/master/UnnamedESP.lua"))()
 end
 });
 local v56 = v16.Player:AddSection("Khác");

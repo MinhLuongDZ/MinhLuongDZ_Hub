@@ -6806,10 +6806,9 @@ end)
     end
 });
 v16.Player:AddButton({
-    Title = "Discord",
+    Title = "Định vị người chơi",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/refs/heads/master/UnnamedESP.lua"))()
-end
+        loadstring(game:HttpGet("https://pastebin.com/raw/6x94FnuW"))()
 });
 local v56 = v16.Player:AddSection("Khác");
 local v115 = v16.Player:AddToggle("ToggleNoClip", {

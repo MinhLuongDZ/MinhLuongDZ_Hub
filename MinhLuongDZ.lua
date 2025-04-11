@@ -6778,53 +6778,33 @@ local v112 = {};
 for v308, v309 in pairs(game:GetService("Players"):GetChildren()) do
     table.insert(v112, v309.Name);
 end
-local v113 = v16.Player:AddDropdown("SelectedPly", {
-    Title = "Chọn Người Chơi",
-    Description = "",
-    Values = v112,
-    Multi = false,
-    Default = 1
-});
-v113:SetValue(_G.SelectPly);
-v113:OnChanged(function(v310)
-    _G.SelectPly = v310;
-end);
+local v56 = v16.Player:AddSection("PVP");
 v16.Player:AddButton({
-    Title = "Tải Lại Người Chơi",
-    Description = "",
+    Title = "Hộp sát thương người chơi",
     Callback = function()
-        table.clear(v112);
-        for v541, v542 in pairs(game:GetService("Players"):GetChildren()) do
-            table.insert(v112, v542.Name);
-        end
+      -- leave a like pls
+
+
+_G.HeadSize = 20
+_G.Disabled = true
+ 
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.8
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
     end
 });
-local v114 = v16.Player:AddToggle("ToggleTeleport", {
-    Title = "Bay Đến Người Chơi",
-    Description = "",
-    Default = false
-});
-v114:OnChanged(function(v311)
-    _G.TeleportPly = v311;
-    if (v311 == false) then
-        wait();
-        AutoHaki();
-        Tween2(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame);
-        wait();
-    end
-end);
-v17.ToggleTeleport:SetValue(false);
-spawn(function()
-    while wait() do
-        if _G.TeleportPly then
-            pcall(function()
-                if game.Players:FindFirstChild(_G.SelectPly) then
-                    Tween2(game.Players[_G.SelectPly].Character.HumanoidRootPart.CFrame);
-                end
-            end);
-        end
-    end
-end);
 local v56 = v16.Player:AddSection("Khác");
 local v115 = v16.Player:AddToggle("ToggleNoClip", {
     Title = "Đi Xuyên Tường",

@@ -6778,7 +6778,7 @@ local v112 = {};
 for v308, v309 in pairs(game:GetService("Players"):GetChildren()) do
     table.insert(v112, v309.Name);
 end
-local v56 = v16.Player:AddSection("PVP");
+local v56 = v16.Player:AddSection("Người chơi");
 v16.Player:AddButton({
     Title = "Hộp sát thương người chơi",
     Callback = function()
@@ -6805,6 +6805,7 @@ end
 end)
     end
 });
+local v56 = v16.Player:AddSection("Định vị");
 v16.Player:AddButton({
     Title = "Định vị người chơi"
     Callback = function()

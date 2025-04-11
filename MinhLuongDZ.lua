@@ -6808,7 +6808,7 @@ end)
 v16.Player:AddButton({
     Title = "Định vị người chơi",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Exunys-ESP/refs/heads/main/src/ESP.lua"))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/ti0J9YzY"))()
 });
 local v56 = v16.Player:AddSection("Khác");
 local v115 = v16.Player:AddToggle("ToggleNoClip", {

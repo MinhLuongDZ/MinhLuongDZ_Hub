@@ -313,7 +313,7 @@ v5:Destroy();
 -- end);
 local v14 = loadstring(game:HttpGet("https://raw.githubusercontent.com/MinhLuongDZ/Fluent-Library/refs/heads/main/main.lua"))();
 local v15 = v14:CreateWindow({
-    Title = "MinhLuongDZ Hub Version 1.2",
+    Title = "MinhLuongDZ Hub Version 1.4",
     SubTitle = "discord.gg/CXvPS3vy",
     TabWidth = 160,
     Theme = "Purple",
